@@ -1,0 +1,51 @@
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.80);
+  z-index: 1;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-img {
+  max-height: 90vh;
+  max-width: 683px;
+}
+
+.modal.appear {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal.appear .modal-img {
+  animation: zoom 0.3s linear;
+}
+
+@keyframes zoom {
+  from{
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+
+.modal-img {
+  max-width: 90vw;
+}
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="about.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png">
+  <title>Diego Bouhot | About</title>
+</head>
+<body>
+  <header class="header">
+    <div class="name">
+      <a href="index.html"><h1>Diego Bouhot</h1></a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <section class="about">
+        <p> Hi! My name is Diego Bouhot.<br><br>I'm  a photographer from Buenos Aires who recently started learning programming.<br><br>
+        This website was entirely made by myself for the programming course I'm currently taking.<br><br>
+        Please use the form below to contact me and leave a comment about photography or coding!<br><br>
+        Also, please visit the links to my social media accounts (especially the Youtube one). It's free!<br><br>Thank you!
+        </p>
+      </section>
+      <div id="form-map">
+        <section class="form-container">
+          <form  id="form" class="form"
+          action="show_data.html" onsubmit="return validateForm(this);">
+            <input type="text" placeholder="Enter your name:" name="name" id="name">
+            <input type="text" placeholder="Enter your e-mail address:" name="email" id="email">
+            <textarea name="comments" id="textarea" cols="30" rows="10" placeholder="Leave a comment:"></textarea>
+            <div class="form-buttons">
+              <input type="submit" id="submit-button" value= "SEND">
+              <input type="reset" id="reset" value="CLEAR">
+            </div>
+          </form>
+        </section>
+        <section class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68167992998!2d-58.573380150803125!3d-34.61574369249134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1652834200836!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="social">
+        <ul>
+          <li><a href="https://instagram.com/diegobouhot" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/diegobouhot" target="_blank"><i class="fa-brands fa-twitter-square"></i></li>
+          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-youtube-square"></i></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f93d533ec8.js" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+  </body>
+  </html>

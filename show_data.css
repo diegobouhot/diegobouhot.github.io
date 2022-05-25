@@ -1,0 +1,142 @@
+* {
+  font-size: 62.50%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 388px;
+  background-color: rgb(245, 245, 245);
+
+}
+
+/*Header con nombre y navbar*/
+.header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+}
+
+.name a {
+  text-decoration: none;
+}
+
+.name a h1 {
+color: black;
+text-align: center;
+font-size: 10rem;
+font-family: 'League Spartan', sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+ul {
+  padding: 1%;
+}
+
+.nav ul li a {
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'League Spartan', sans-serif;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  color:black;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(220, 220, 220);
+}
+
+.nav ul li a:hover {
+  font-size: 1.9rem;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+  opacity: 0.3;
+}
+
+.title {
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-style:oblique;
+  padding-bottom: 2rem;
+}
+.form-sent {
+ padding: 0.2rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.form-data {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+main {
+  padding-bottom: 10rem;
+}
+
+/* Footer con social links */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20rem;
+  box-shadow: 0px -3px rgb(220, 220, 220);
+}
+
+.social{
+  display:flex;
+  justify-content: space-between;
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.social ul li {
+  list-style: none;
+  margin: 1rem;
+}
+
+/* Íconos de Font Awesome */ 
+.fa-brands.fa-instagram {
+  font-size: 32px;
+  color: black;
+}
+.fa-brands.fa-instagram:hover {
+  opacity: 0.5;  
+}
+
+.fa-brands.fa-twitter-square {
+  font-size: 32px;
+  color: black;
+}
+.fa-brands.fa-twitter-square:hover {
+  opacity: 0.5;  
+}
+
+.fa-brands.fa-youtube-square {
+  font-size: 32px;
+  color: black;
+}
+.fa-brands.fa-youtube-square:hover {
+  opacity: 0.5;  
+}

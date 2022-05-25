@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="show_data.css">
+    <link rel="icon" href="favicon.png">
+    <title>Diego Bouhot | Form submitted!</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="name">
+        <a href="index.html"><h1>Diego Bouhot</h1></a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form-sent">
+        <h1 class = title>Form Submitted!<h1>
+        <img src="./img/tuki.jpg">
+        <h3 class = "subtitle">The following information was sent:</h3>
+     </section>
+    <script>
+      let args = location.search.substr(1).split("&");
+      for (let i = 0; i < args.length; ++i) {
+        let parts = args[i].split("=");
+        if (parts != null) {
+          let field = parts[0];
+          let value = parts[1];
+          if (value == null) {
+            value = "null";
+          } else {
+            value = '"' + unescape(value.replace(/\+/g, " ")) + '"';
+          }
+          document.writeln(`<section class = "form-sent"><p class = "form-data">${field}: ${value}<br></p></section>`);
+        }
+      }
+    </script>
+    </main>
+     <footer class="footer">
+      <div class="social">
+        <ul>
+          <li><a href="https://instagram.com/diegobouhot" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/diegobouhot" target="_blank"><i class="fa-brands fa-twitter-square"></i></li>
+          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-youtube-square"></i></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f93d533ec8.js" crossorigin="anonymous"></script>
+  </body>
+</html>
